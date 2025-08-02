@@ -82,8 +82,8 @@ body {
 }
 
 .patopekin h2{
-  color: #a12b2b;
-  font-size: 2em;
+    color: #a12b2b;
+    font-size: 2em;
 }
 
 .pato,
@@ -115,9 +115,26 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     text-align: center;
     z-index: 3;
+}
+
+.texto-central h1{
+    border: 1px solid black;
+    padding: 10px;   
+    color: rgb(247, 155, 17);
+    text-shadow: -1px -1px 0 black,
+                1px -1px 0 black,
+               -1px  1px 0 black,
+                1px  1px 0 black;
+}
+
+.texto-central p{
+    color: white;
+    text-shadow: -1px -1px 0 black,
+                1px -1px 0 black,
+               -1px  1px 0 black,
+                1px  1px 0 black;
 }
 
 .texto-central h1 {
