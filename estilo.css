@@ -1,138 +1,137 @@
 body {
-  margin: 0;
-  padding: 2em;
-  background-image: url('https://i.postimg.cc/7YwNV4CP/fondo.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 2em;
+    background-image: url('https://i.postimg.cc/7YwNV4CP/fondo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: sans-serif;
 }
 
 .menu {
-  background-color: #a12b2b;
-  padding: 1em 0;
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    background-color: #a12b2b;
+    padding: 1em 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .menu ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 3em;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3em;
+    margin: 0;
+    padding: 0;
 }
 
 .menu li {
-  color: white;
-  font-size: 1.2em;
+    color: white;
+    font-size: 1.2em;
 }
 
 .contenedor {
-  display: flex;
-  max-width: 1200px;
-  margin: 2em auto;
-  gap: 2em;
+    display: flex;
+    max-width: 1200px;
+    margin: 2em auto;
+    gap: 2em;
 }
 
 .columna-izquierda {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 .columna-derecha {
-  flex: 1.5;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 .bloque-pato,
-.bloque-orden,
 .bloque-principal,
 .bloque-menu,
 .bloque-horario {
-  position: relative;
-  background-color: white;
-  padding: 1em;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .pato,
 .img-grande {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .nube {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .texto-central {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  z-index: 3;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 3;
 }
 
 .texto-central h1 {
-  margin: 0;
-  font-size: 2em;
+    margin: 0;
+    font-size: 2em;
 }
 
 .texto-central p {
-  margin: 0.5em 0;
-  font-weight: bold;
+    margin: 0.5em 0;
+    font-weight: bold;
 }
 
 .boton {
-  background-color: #a12b2b;
-  color: white;
-  border: none;
-  padding: 0.5em 1.5em;
-  margin-top: 1em;
-  cursor: pointer;
-  font-weight: bold;
+    background-color: #a12b2b;
+    color: white;
+    border: none;
+    padding: 0.5em 1.5em;
+    margin-top: 1em;
+    cursor: pointer;
+    font-weight: bold;
 }
-
-.bloque-menu {
-  display: flex;
-  justify-content: space-between;
-  gap: 1em;
+.contenedor{
+    display: flex;
+    flex-direction: row;
 }
-
 .item {
-  flex: 1;
-  text-align: center;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    width: 100%;
 }
 
 .item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 0.5em;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.5em;
 }
 
 .bloque-horario h3 {
-  background-color: #a12b2b;
-  color: white;
-  padding: 0.5em;
-  text-align: center;
-  margin: 0 0 1em 0;
+    position: relative;
+    background-color: #a12b2b;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    margin: 0 0 1em 0;
 }
