@@ -48,7 +48,7 @@ body {
 }
 
 .columna-derecha {
-    flex: 1.5;
+    flex: 2;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -57,6 +57,7 @@ body {
 .bloque-pato,
 .bloque-principal,
 .bloque-menu,
+
 .bloque-horario {
     position: relative;
     background-color: white;
@@ -94,11 +95,19 @@ body {
 
 .nube {
     position: absolute;
-    top: 0;
+    top: 18%;
     left: 0;
     width: 100%;
     z-index: 2;
     pointer-events: none;
+}
+
+.nube-derecha{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 .texto-central {
