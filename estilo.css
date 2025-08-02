@@ -131,13 +131,14 @@ body {
 }
 
 .boton {
-    background-color: #a12b2b;
+    background-color: #df5616;
     color: white;
     border: none;
     padding: 0.5em 1.5em;
     margin-top: 1em;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 20px 20px 20px 20px;
 }
 .contenedor{
     display: flex;
