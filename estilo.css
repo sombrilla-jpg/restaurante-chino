@@ -64,6 +64,27 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.patopekin{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.textopato {
+    align-items: center
+}
+.patopekin img{
+    width: 50%;
+    right: 100%;
+}
+
+.patopekin h2{
+  color: #a12b2b;
+  font-size: 2em;
+}
+
 .pato,
 .img-grande {
     width: 100%;
