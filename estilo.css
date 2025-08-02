@@ -65,6 +65,15 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.bloque-horario img{
+    float: left;
+}
+
+.bloque-horario div{
+    float: right;
+    text-align: center;
+}
+
 .patopekin{
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -177,7 +186,7 @@ body {
 
 .bloque-horario h3 {
     position: relative;
-    background-color: #a12b2b;
+    background-color: hsl(0, 58%, 40%);
     color: white;
     padding: 0.5em;
     text-align: center;
@@ -232,4 +241,12 @@ body {
 .ordenahoy h2{
     color: #a12b2b;
     font-size: 2em;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: rgb(102, 52, 6);
+  width: 100%;
+  margin: 20px 0;
 }
