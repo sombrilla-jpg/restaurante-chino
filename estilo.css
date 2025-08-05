@@ -35,7 +35,7 @@ body {
 
 .contenedor {
     display: flex;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 2em auto;
     gap: 2em;
 }
@@ -45,6 +45,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    padding: 2.5%;
+    background-color: rgba(0, 0, 0, 0.199);
 }
 
 .columna-derecha {
@@ -52,17 +54,24 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.199);
 }
 
-.bloque-pato,
+.bloque-pato{
+    padding: 0;
+    position: relative;
+}
+
 .bloque-principal,
 .bloque-menu,
 
 .bloque-horario {
+    display: flex;
     position: relative;
     background-color: white;
-    padding: 1em;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex-direction: column;
 }
 
 .bloque-horario img{
@@ -105,10 +114,8 @@ body {
 .nube {
     position: absolute;
     top: 28%;
-    left: 0;
-    width: 100%;
     z-index: 2;
-    pointer-events: none;
+    width: 100%;
 }
 
 .nube-derecha{
@@ -148,12 +155,13 @@ body {
 
 .texto-central h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 4em;
 }
 
 .texto-central p {
     margin: 0.5em 0;
     font-weight: bold;
+    font-size: 2em;
 }
 
 .boton {
@@ -165,7 +173,15 @@ body {
     cursor: pointer;
     font-weight: bold;
     border-radius: 20px 20px 20px 20px;
+    transition: transform 0.3s ease;
 }
+
+.boton:hover {
+  transform: scale(1.1);
+  background-color:aliceblue;
+  color: rgb(219, 100, 21);
+}
+
 .contenedor{
     display: flex;
     flex-direction: row;
@@ -250,4 +266,8 @@ hr {
   background-color: rgb(102, 52, 6);
   width: 100%;
   margin: 20px 0;
+}
+
+.horario{
+    width: 32em;
 }
