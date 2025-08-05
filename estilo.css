@@ -104,7 +104,7 @@ body {
 
 .nube {
     position: absolute;
-    top: 18%;
+    top: 28%;
     left: 0;
     width: 100%;
     z-index: 2;
@@ -195,7 +195,8 @@ body {
 
 .ubicacion {
     position: relative;
-    background-image: url('https://i.postimg.cc/rp3D9m6H/costilla.webp');
+    background-image: url('https://i.postimg.cc/rp3D9m6H/costilla.webp'
+    );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
