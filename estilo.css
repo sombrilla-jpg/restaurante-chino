@@ -6,12 +6,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     box-sizing: border-box;
-    overflow-x: hidden;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 .menu {
-    background-color: #a12b2b;
+    background-color: #7c0f0f;
     padding: 1em 0;
     width: 100%;
     position: sticky;
@@ -35,113 +35,81 @@ body {
 
 .contenedor {
     display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
     margin: 2em auto;
     gap: 2em;
 }
 
-.columna-izquierda {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    padding: 2.5%;
-    background-color: rgba(0, 0, 0, 0.199);
-    border-radius: 1em;
-}
-
+.columna-izquierda,
 .columna-derecha {
-    flex: 2;
+    flex: 1 1 45%;
     display: flex;
     flex-direction: column;
     gap: 2em;
     padding: 2%;
-    background-color: rgba(0, 0, 0, 0.199);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 1em;
 }
 
-.bloque-pato{
+.bloque-pato, .bloque-principal{
     padding: 0;
-    position: relative;
+    background-color: rgb(255, 255, 255);
     border-radius: 1em;
 }
-
-.bloque-principal,
-.bloque-menu,
-
 .bloque-horario {
     display: flex;
-    position: relative;
-    background-color: #a12b2b;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     flex-direction: column;
+    position: relative;
+    background-color: rgb(83, 10, 10);
     border-radius: 1em;
+    padding: 1em;
 }
 
-.bloque-horario img{
-    float: left;
-    width: 30%;
-    flex-direction: row;
-    border-radius: 1em;
+.separadorizq{
+    position: relative;
+    width: 100%;
+    height: 25em;
+    overflow: visible;
 }
 
-.bloque-horario div{
-    float: right;
-    text-align: center;
-    flex-direction: row-reverse;
-    border-radius: 1em;
-}
-
-.patopekin{
-    background-color: rgb(255, 255, 255);
+.patopekin {
     display: flex;
     flex-direction: row;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    gap: 1em;
+    padding: 2% 0;
 }
 
-.textopato h2{
-    align-items: center;
-    font-size: 4em;
-}
-
-.textopato p{
-    align-items: center;
+.textopato h2 {
     font-size: 2em;
-}
-
-.patopekin img{
-    width: 50%;
-    right: 100%;
-}
-
-.patopekin h2{
     color: #a12b2b;
-    font-size: 2em;
+    margin: 0;
 }
 
-.pato,
-.img-grande {
+.textopato p {
+    font-size: 1.5em;
+    margin: 0.5em 0 0 0;
+    color: rgb(0, 0, 0);
+}
+
+.patopekin img {
+    width: 50%;
+    height: auto;
+    border-radius: 1em;
+}
+
+.pato, .img-grande {
     width: 100%;
     height: auto;
-    display: block;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+    border-radius: 1em 1em 0 0;
 }
 
-.nube {
+.nube, .nube-derecha {
     position: absolute;
-    top: 28%;
-    z-index: 2;
-    width: 100%;
-}
-
-.nube-derecha{
-    position: absolute;
-    top: 25%;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    z-index: 2;
+    height: auto;
+    z-index: 10;
 }
 
 .texto-central {
@@ -153,24 +121,18 @@ body {
     z-index: 3;
 }
 
-.texto-central h1{
-    padding: 10px;   
-    color: rgb(247, 155, 17);
-}
-
-.texto-central p{
-    color: white;
-}
-
 .texto-central h1 {
-    margin: 0;
     font-size: 4em;
+    color: rgb(247, 155, 17);
+    margin: 0;
+    padding: 0.5em;
 }
 
 .texto-central p {
-    margin: 0.5em 0;
-    font-weight: bold;
     font-size: 2em;
+    font-weight: bold;
+    color: white;
+    margin: 0.5em 0;
 }
 
 .boton {
@@ -178,38 +140,33 @@ body {
     color: white;
     border: none;
     padding: 0.5em 1.5em;
-    margin-top: 1em;
-    cursor: pointer;
     font-weight: bold;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 2em;
+    cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 .boton:hover {
     transform: scale(1.1);
-    background-color:aliceblue;
+    background-color: aliceblue;
     color: rgb(219, 100, 21);
 }
 
-.contenedor{
-    display: flex;
-    flex-direction: row;
-}
 .item {
-    flex: 1;
+    flex: 1 1 30%;
     text-align: center;
-    position: relative;
-    width: 100%;
 }
 
-.item h4{
-    color: white;
+.item h4 {
+    color: rgb(168, 30, 30);
     font-size: 2em;
+    margin: 0.5em 0;
 }
 
-.item p{
-    color: white;
-    font-size: 1em;
+.item p {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    margin: 0;
 }
 
 .item img {
@@ -219,87 +176,74 @@ body {
     margin-bottom: 0.5em;
 }
 
-.bloque-horario h3 {
-    position: relative;
-    font-size: 2em;
-    color: white;
-    text-align: center;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-}
-
 .ubicacion {
     position: relative;
-    background-image: url('https://i.postimg.cc/rp3D9m6H/costilla.webp'
-    );
+    width: 100%;
+    height: 25em;
+    background-image: url('https://i.postimg.cc/rp3D9m6H/costilla.webp');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 400px;
     display: flex;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
+    border-radius: 1em;
 }
 
 .fondoblanco {
     position: absolute;
-    background-color: white;
-    z-index: 2;
-    height: 50%;
-    width: 100%;
     bottom: 0;
     left: 0;
-    padding: 10px;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    padding: 1em;
     box-sizing: border-box;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0 0 2em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.ubicacion h2{
-    position: relative;
-}
-
-.mapa{
-    position: relative;
-    text-align: center;
-    float: right;
-    top: 0;
-    left: 0;
-}
-
-.fondoblanco iframe {
+.mapa iframe {
     width: 50%;
-    height: 100px;
+    height: 6em;
     border: none;
 }
 
-.ordenahoy{
-    float: left;
-}
-
-.ordenahoy h2{
+.ordenahoy h2 {
     color: #a12b2b;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin: 0 0 0.5em 0;
 }
 
 hr {
     border: none;
-    height: 2px;
+    height: 0.2em;
     background-color: rgb(102, 52, 6);
-    width: 100%;
-    margin: 20px 0;
+    margin: 1em 0;
 }
 
-.imagenizquierda{
-    width: 150px;
+.bloque-horario {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: flex-start;
+    padding: 1em;
+}
+
+.bloque-horario .imagenizquierda {
+    width: 30%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0.5em;
+    flex-shrink: 0;
 }
 
-.horario{
-    width: 32em;
-    float: right;
-    flex-direction: row-reverse;
+.bloque-horario .horario {
     color: bisque;
+    flex: 1;
+    font-size: 1.5em;
+}
+
+.bloque-horario h3 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0 0.5em 0;
 }
