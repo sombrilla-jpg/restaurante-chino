@@ -42,7 +42,7 @@ body {
 }
 
 .columna-izquierda,
-.columna-derecha {
+.columna-derecha , .columna-izquierda{
     flex: 1 1 45%;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,9 @@ body {
     padding: 0;
     background-color: rgb(255, 255, 255);
     border-radius: 1em;
+    height: 100%;
 }
+
 .bloque-horario {
     display: flex;
     flex-direction: column;
@@ -188,7 +190,6 @@ body {
     background-size: cover;
     background-position: center;
     display: flex;
-    border-radius: 1em;
 }
 
 .fondoblanco {
@@ -200,7 +201,6 @@ body {
     background-color: white;
     padding: 1em;
     box-sizing: border-box;
-    border-radius: 0 0 2em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
