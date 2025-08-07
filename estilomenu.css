@@ -1,0 +1,22 @@
+body{
+    background-color: brown;
+}
+
+section{
+    border-radius: 2em;
+    background-color: rgb(102, 19, 19);
+    display: flex;
+    position: relative;
+}
+
+header{
+    text-align: center;
+}
+
+hr{
+    max-width: 30%;
+}
+
+footer{
+    text-align: center;
+}
