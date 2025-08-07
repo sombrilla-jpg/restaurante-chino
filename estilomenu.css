@@ -1,22 +1,102 @@
-body{
-    background-color: brown;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #841010;
+    font-family: 'Georgia', serif;
+    color: #841010;
 }
 
-section{
-    border-radius: 2em;
-    background-color: rgb(102, 19, 19);
-    display: flex;
-    position: relative;
+main {
+    background-color: #fdf7f2;
+    max-width: 800px;
+    margin: 3em auto;
+    padding: 3em;
+    border: 10px double #841010;
+    border-radius: 10px;
 }
 
-header{
+.titulo {
     text-align: center;
+    margin-bottom: 2em;
 }
 
-hr{
-    max-width: 30%;
+.titulo h1 {
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-footer{
+.titulo p {
+    margin-top: 0.5em;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.seccion {
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+.seccion h2 {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #841010;
+    display: inline-block;
+    padding-bottom: 0.3em;
+}
+
+.lista-platos {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.lista-platos li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3em;
+    font-size: 0.9em;
+    color: #841010;
+}
+
+.grid-secciones {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.columna {
+    flex: 1;
+    min-width: 300px;
+}
+
+.fondorojo{
+    background-color: #841010;
+    border-radius: 2em;
+}
+
+.fondorojo h3{
+    font-size: 3em;
+    color: #fdf7f2;
+}
+
+.fondorojo h2{
+    font-size: 4em;
+    color: #fdf7f2;
+}
+
+#contacto p{
+    color: #fdf7f2;
     text-align: center;
 }
