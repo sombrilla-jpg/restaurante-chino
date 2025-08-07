@@ -260,6 +260,10 @@ hr {
     flex-shrink: 0;
 }
 
+.marca{
+    color: #df5616;
+}
+
 .bloque-horario .horario {
     color: bisque;
     flex: 1;
